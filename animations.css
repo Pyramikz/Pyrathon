@@ -1,0 +1,115 @@
+/* ---------- GLOBAL FADE-IN ------------- */
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- GRADIENT TEXT SWEEP -------- */
+.gradient-text {
+  background: linear-gradient(90deg, #ff00cc, #3333ff, #00ffff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 4s linear infinite;
+}
+@keyframes gradientMove {
+  to { background-position: 200% center; }
+}
+
+/* ---------- GLOW ON HOVER -------------- */
+.glow-hover:hover {
+  box-shadow: 0 0 20px rgba(0,255,200,0.7), 0 0 40px rgba(0,255,200,0.5);
+  transform: translateY(-3px);
+  transition: all 0.4s ease;
+}
+
+/* ---------- FLOATING BLOB BACKGROUND ---- */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.5;
+  animation: blobMove 20s ease-in-out infinite;
+}
+@keyframes blobMove {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(50px, -50px) scale(1.2); }
+}
+
+/* ---------- LINK UNDERLINE SWEEP -------- */
+.link-sweep {
+  position: relative;
+}
+.link-sweep::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: #00ffff;
+  transition: width 0.3s ease;
+}
+.link-sweep:hover::after {
+  width: 100%;
+}
+
+/* ---------- CARD LIFT ON HOVER ---------- */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+
+/* ---------- SLIDE IN FROM LEFT ---------- */
+.slide-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* ---------- SLIDE IN FROM RIGHT ---------- */
+.slide-in-right {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+    /* Slide In Up */
+    @keyframes slideInUp {
+      from {
+        transform: translateY(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Clase que aplica la animación */
+    .slide-in-up {
+      animation: slideInUp 0.8s ease-out forwards;
+    }

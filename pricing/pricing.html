@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>El Editor de Código con IA — Demo</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../animations.css">
+
+
+  <link rel="icon" href="../favicon.svg">
+    <!-- Enlace a Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <style>
+    /* ---------- PRICING PLANS SECTION ---------- */
+.pricing-plans-section {
+  padding: 100px 20px;
+  background: linear-gradient(to bottom, #0a0a0f, #1a2a6c );
+  color: #fff;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.pricing-plans-header h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #02ff41, #00ccff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pricing-plans-header p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 60px;
+}
+
+.pricing-plans-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.plan-card {
+  background: #1f1c38;
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 300px;
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+
+.plan-card-popular {
+  background: linear-gradient(135deg, #00b82e, #0083a3);
+  color: #fff;
+}
+
+.plan-card-badge {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background: #0059ff;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.plan-card-header h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.plan-price {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.plan-price span {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  text-align: left;
+}
+
+.plan-features li {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.plan-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #0059ff;
+  font-weight: bold;
+}
+
+.plan-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  background: #44416b;
+  transition: 0.3s ease;
+}
+
+.plan-btn:hover {
+  background: #0099ff;
+}
+
+.plan-btn-primary {
+  background: #00087e;
+}
+
+.plan-btn-primary:hover {
+  background: #0099ff;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1000px) {
+  .pricing-plans-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+  </style>
+    
+</head>
+<body>
+    
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="../index.html">
+        <img src="../favicon.svg" alt="Logo" width="26" height="26">
+        <span>Pyrathon<span class="accent">Compiler</span></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#">Pricing</a>
+        <a href="../news/news.php">News</a>
+
+        <a href="#enterprise">Blog</a>
+        <a href="#docs">Docs</a>
+        <a href="#docs">Community</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="btn btn--ghost" href="Pyrathon Lite_setup.exe">Download</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ...existing code... -->
+<section class="hero-framer">
+  <div class="hero-bg"></div>
+  <div class="hero-content fade-in">
+    <h1>Just EXEcute it <br><span>with Pyrathon</span></h1>
+    <p>The Multi-Language compiler just for You.</p>
+    <div class="hero-buttons">
+      <a href="#" class="btn-hero primary">Learn More</a>
+      <a href="#" class="btn-hero secondary">Start for free</a>
+    </div>
+    <div class="hero-img slide-in-up">
+      <img src="English.png" alt="Editor UI Demo">
+    </div>
+  </div>
+</section>
+
+ <!-- SECTION: Pricing Plans -->
+<section class="pricing-plans-section">
+  <div class="pricing-plans-container">
+    <div class="pricing-plans-header">
+      <h2>Choose Your Plan</h2>
+      <p>Flexible plans for developers, teams, and enterprises. Scale at your own pace.</p>
+    </div>
+    <div class="pricing-plans-cards">
+      <!-- Plan Básico -->
+      <div class="plan-card">
+        <div class="plan-card-header">
+          <h3>Starter</h3>
+          <p class="plan-price">FREE<span>/perpetual</span></p>
+        </div>
+        <ul class="plan-features">
+          <li>Single Language Compilation</li>
+          <li>Basic Security</li>
+          <li>Community Support</li>
+        </ul>
+        <a href="#" class="plan-btn">Get Started</a>
+      </div>
+      
+      <!-- Plan Popular -->
+      <div class="plan-card plan-card-popular">
+        <div class="plan-card-badge">Most Popular</div>
+        <div class="plan-card-header">
+          <h3>Advanced</h3>
+          <p class="plan-price">$50<span>/perpetual</span></p>
+        </div>
+        <ul class="plan-features">
+          <li>Multi-Language Compilation</li>
+          <li>Advanced Security + UPX</li>
+          <li>Priority Support</li>
+          <li>Team Collaboration</li>
+        </ul>
+        <a href="#" class="plan-btn plan-btn-primary">Get Started</a>
+      </div>
+
+      <!-- Plan Enterprise -->
+      <div class="plan-card">
+        <div class="plan-card-header">
+          <h3>Enterprise</h3>
+          <p class="plan-price">Custom</p>
+        </div>
+        <ul class="plan-features">
+          <li>Full Platform Access</li>
+          <li>Dedicated Security Certificates</li>
+          <li>24/7 Enterprise Support</li>
+          <li>Custom Integrations</li>
+        </ul>
+        <a href="#" class="plan-btn">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FOOTER (simple placeholder) -->
+<footer class="mega-footer">
+  <!-- Top section with columns -->
+  <div class="footer-top">
+    <div class="footer-column">
+      <h4>Platform</h4>
+      <ul>
+        <li><a href="#">About PyrathonCompiler</a></li>
+        <li><a href="#">Supported Languages</a></li>
+        <li><a href="#">Getting Started</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Languages</h4>
+      <ul>
+        <li><a href="#">Python</a></li>
+        <li><a href="#">JavaScript / Node.js</a></li>
+        <li><a href="#">C / C++</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">More languages...</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">Beginner Guides</a></li>
+        <li><a href="#">Tips & Tricks</a></li>
+        <li><a href="#">Code Templates</a></li>
+        <li><a href="#">Integration API</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Community</h4>
+      <ul>
+        <li><a href="#">Forum (coming soon)</a></li>
+        <li><a href="#">Discord</a></li>
+        <li><a href="#">User Groups</a></li>
+        <li><a href="#">Online Events</a></li>
+        <li><a href="#">Success Stories</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Report a Bug</a></li>
+        <li><a href="#">Service Status</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Contribute</h4>
+      <ul>
+        <li><a href="#">Developer Guide</a></li>
+        <li><a href="#">GitHub Repository</a></li>
+        <li><a href="#">Submit Improvements</a></li>
+        <li><a href="#">Security Report</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom section -->
+  <div class="footer-bottom">
+    <div class="footer-links">
+      <a href="#">Help Center</a>
+      <a href="#">Diversity Initiatives</a>
+      <a href="#">Report a Bug</a>
+      <a href="#">Status <span class="status-dot"></span></a>
+    </div>
+    <p>© 2025 PyrathonCompiler. Multi-language compilation platform.</p>
+  </div>
+</footer>
+
+
+  <script src="../script.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

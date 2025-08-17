@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>El Editor de Código con IA — Demo</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="style_news.css">
+  <link rel="stylesheet" href="../animations.css">
+
+
+  <link rel="icon" href="../favicon.svg">
+    <!-- Enlace a Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="../index.html">
+        <img src="../favicon.svg" alt="Logo" width="26" height="26">
+        <span>Pyrathon<span class="accent">Compiler</span></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#">Pricing</a>
+        <a href="#features">News</a>
+        <a href="#enterprise">Blog</a>
+        <a href="#docs">Docs</a>
+        <a href="#docs">Community</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="btn btn--ghost" href="Pyrathon Lite_setup.exe">Download</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+<!-- HERO HEADER -->
+  <section class="hero-header">
+    <small>Welcome to the <strong>Pyrathon Insider</strong><br>Aug. 14, 2025, 7:15 p.m.</small>
+    <h1>Pyrathon 3.14.0rc2 and 3.13.7 are go!</h1>
+    <p>
+      🎉 Not one but two expedited releases! 🚀 Pyrathon 3.14.0rc2 (final release candidate).  
+      Note: rc2 was planned for 2025-08-26, but we fixed a bug requiring a bytecode bump.  
+      This means .pyc files … 
+      <a href="#">Read more</a>
+    </p>
+  </section>
+
+  <!-- CONTENT -->
+  <div class="container news-layout">
+    <!-- NEWS -->
+    <div class="news-section">
+      <h2><i class='bx bx-news'></i> Latest News</h2>
+      <ul class="news-list">
+        <li>
+          <a href="#">Announcing the PSF Board Candidates for 2025!</a>
+          <small>Aug. 14, 2025</small>
+        </li>
+        <li>
+          <a href="#">Announcing Pyrathon Software Foundation Fellow Members for Q2 2025! 🎉</a>
+          <small>Aug. 8, 2025</small>
+        </li>
+        <li>
+          <a href="#">Unmasking Phantom Dependencies with Software Bill-of-Materials as Ecosystem Neutral Metadata</a>
+          <small>Aug. 7, 2025</small>
+        </li>
+        <li>
+          <a href="#">Pyrathon 3.13.6 is now available</a>
+          <small>Aug. 6, 2025</small>
+        </li>
+        <li>
+          <a href="#">The PSF has paused our Grants Program</a>
+          <small>Aug. 5, 2025</small>
+        </li>
+      </ul>
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <section>
+        <h3>Pyrathon Insider</h3>
+        <p>Subscribe to Pyrathon Insider via:</p>
+        <a href="#"><i class='bx bx-rss'></i> RSS</a><br>
+        <a href="#">Also check out the Discussions on Pyrathon.org</a>
+      </section>
+
+      <section class="copyright">
+        <h3>Copyright</h3>
+        <p>
+          Pyrathon Insider by the Pyrathon Core Team is licensed under a  
+          <a href="#">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.  
+          Based on a work at <a href="#">pyrathon.org</a>.
+        </p>
+      </section>
+    </aside>
+  </div>
+  <!-- FOOTER (simple placeholder) -->
+<footer class="mega-footer">
+  <!-- Top section with columns -->
+  <div class="footer-top">
+    <div class="footer-column">
+      <h4>Platform</h4>
+      <ul>
+        <li><a href="#">About PyrathonCompiler</a></li>
+        <li><a href="#">Supported Languages</a></li>
+        <li><a href="#">Getting Started</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Languages</h4>
+      <ul>
+        <li><a href="#">Python</a></li>
+        <li><a href="#">JavaScript / Node.js</a></li>
+        <li><a href="#">C / C++</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">More languages...</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">Beginner Guides</a></li>
+        <li><a href="#">Tips & Tricks</a></li>
+        <li><a href="#">Code Templates</a></li>
+        <li><a href="#">Integration API</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Community</h4>
+      <ul>
+        <li><a href="#">Forum (coming soon)</a></li>
+        <li><a href="#">Discord</a></li>
+        <li><a href="#">User Groups</a></li>
+        <li><a href="#">Online Events</a></li>
+        <li><a href="#">Success Stories</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Report a Bug</a></li>
+        <li><a href="#">Service Status</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Contribute</h4>
+      <ul>
+        <li><a href="#">Developer Guide</a></li>
+        <li><a href="#">GitHub Repository</a></li>
+        <li><a href="#">Submit Improvements</a></li>
+        <li><a href="#">Security Report</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom section -->
+  <div class="footer-bottom">
+    <div class="footer-links">
+      <a href="#">Help Center</a>
+      <a href="#">Diversity Initiatives</a>
+      <a href="#">Report a Bug</a>
+      <a href="#">Status <span class="status-dot"></span></a>
+    </div>
+    <p>© 2025 PyrathonCompiler. Multi-language compilation platform.</p>
+  </div>
+</footer>
+
+
+  <script src="../script.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

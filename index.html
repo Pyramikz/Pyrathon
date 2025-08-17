@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>El Editor de Código con IA — Demo</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="icon" href="favicon.svg">
+    <!-- Enlace a Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <meta name="description" content="Una página de ejemplo que replica el estilo del hero de 'AI Code Editor' usando HTML, CSS y JS puros.">
+</head>
+<body>
+
+    <div class="stars"></div>
+    <div class="sky">
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+    </div>
+    
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#">
+        <img src="favicon.svg" alt="Logo" width="26" height="26">
+        <span>Pyrathon<span class="accent">Compiler</span></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="pricing/pricing.html">Pricing</a>
+        <a href="news/news.php">News</a>
+
+        <a href="#enterprise">Blog</a>
+        <a href="#docs">Docs</a>
+        <a href="#docs">Community</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="btn btn--ghost" href="Pyrathon Lite_setup.exe">Download</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="hero">
+    <div class="gradient-bg" aria-hidden="true"></div>
+    <div class="container hero__content">
+      <h1 class="hero__title fade-in">Multi-Language <span>to EXE Builder</span></h1>
+      <p class="hero__subtitle fade-in">Transform code from multiple programming languages into fully functional, optimized EXE files with just a few steps.</p>
+
+      <div class="cta">
+        <a class="btn btn--primary fade-in" href="Pyrathon MacOS.dmg">
+          <i class="bx bxl-apple" aria-hidden="true" style="color: black;"></i> Download for macOS
+
+
+        </a>
+        <a class="btn btn--dark fade-in" href="#downloads">All Downloads</a>
+      </div>
+
+      <!-- Mock: bottom code panels like the screenshot -->
+      <section class="editor-mock card-hover">
+        <div class="panel left">
+          <div class="panel__topbar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <div class="tabs">
+              <span class="tab active">lib.py</span>
+              <span class="tab">test.py</span>
+              <span class="tab">incremental.py</span>
+            </div>
+            <div class="panel__actions">⋯</div>
+              </div>
+              <pre class="code"><code>=== Executing Pyrathon Build ===
+[INFO] Pyrathon: 1.0.0<br>
+[INFO] Script: main.py → dist/main.exe<br>
+[INFO] Icon: favicon.ico | Console: Hidden | One-file mode<br>
+[INFO] Build complete! EXE ready at dist/main.exe
+              </code></pre>
+              </div>
+
+
+        <div class="panel right">
+          <div class="panel__topbar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <div class="tabs">
+              <span class="tab active">How to convert Py to EXE?</span>
+            </div>
+            <div class="panel__actions">⟳</div>
+          </div>
+          <div class="assistant">
+            <div class="assistant__badge">PC</div>
+              <div class="assistant__text">
+                With <strong>Pyrathon</strong>, converting a <code>.py</code> file into an <code>.exe</code> is super easy and fast. Simply select your Python script, choose your preferred settings like custom icon, console visibility, and one-file build mode, then click <em>Build</em>.  
+
+                Pyrathon handles all the complexity behind the scenes: it collects all dependencies, packages data files, compiles your code into bytecode, and links everything into a standalone Windows executable.  
+
+                No need to worry about installing Python or libraries on the target machine. Your users can run the <code>.exe</code> just like any other application.  
+              </div>
+
+
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+    <div class="stars"></div>
+<!-- SECTION: Why Choose Us (inspired by both images) -->
+<section id="why-choose" class="why-choose ">
+  <!-- aerial background (road image) -->
+  <div class="bg bg--road" aria-hidden="true"></div>
+  <!-- subtle gradient overlay -->
+  <div class="overlay"></div>
+
+  <div class="wrap">
+    <!-- LEFT: big title + intro + bullets -->
+    <div class="col col--leftlink-sweep slide-in-left ">
+      <h2 class="title">Why <span class="accent">Choose Us</span></h2>
+      <p class="lead">
+        We deliver production-ready executables with a focus on <strong>speed</strong>, 
+        <strong>compatibility</strong>, and <strong>support</strong>. We handle the technical side so you can focus on creating.
+      </p>
+
+      <ul class="features">
+        <li>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 6 6 .5-4.5 3.8L19 19l-7-4-7 4 1.5-6.7L3 8.5 9 8z"/></svg>
+          <div>
+            <strong>Ultra-fast builds</strong>
+            <span>Optimized pipeline and caching for shorter build times.</span>
+          </div>
+        </li>
+        <li>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm1 10h4v2h-6V7h2v4z"/></svg>
+          <div>
+            <strong>Multi-platform</strong>
+            <span>Windows, macOS, and Linux: packaging and testing included.</span>
+          </div>
+        </li>
+        <li>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 6.5L11.5 16 7 11.5 8.4 10.1 11.5 13.2 19.6 5.1z"/></svg>
+          <div>
+            <strong>Real support</strong>
+            <span>Assistance during integration and deployment.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- RIGHT: mock console + three overlapping blocks -->
+    <div class="col col--right slide-in-right ">
+      <!-- mock terminal styled like PyrathonCompiler (image 1 feel) -->
+      <div class="mock-console">
+        <div class="mock-console__bg"></div>
+        <div class="mock-console__content" role="img" aria-label="Build output">
+          <pre class="cmd">
+=== Executing Build ===
+[INFO] Script: main.py → dist/main.exe
+[INFO] Icon: favicon.ico | Console: Hidden | One-file mode
+[INFO] Build complete! EXE ready at dist/main.exe
+          </pre>
+        </div>
+      </div>
+
+      <!-- lower colorful blocks, inspired by your second image -->
+      <div class="blocks">
+        <div class="block block--left">
+          <h3>Speed</h3>
+          <p>Reduced build times with caching and efficient packaging.</p>
+        </div>
+        <div class="block block--center">
+          <h3>Compatibility</h3>
+          <p>Executables that work out of the box on all operating systems.</p>
+        </div>
+        <div class="block block--right">
+          <h3>Support</h3>
+          <p>Documentation and assistance for smooth deployment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- FOOTER (simple placeholder) -->
+<footer class="mega-footer">
+  <!-- Top section with columns -->
+  <div class="footer-top">
+    <div class="footer-column">
+      <h4>Platform</h4>
+      <ul>
+        <li><a href="#">About PyrathonCompiler</a></li>
+        <li><a href="#">Supported Languages</a></li>
+        <li><a href="#">Getting Started</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Languages</h4>
+      <ul>
+        <li><a href="#">Python</a></li>
+        <li><a href="#">JavaScript / Node.js</a></li>
+        <li><a href="#">C / C++</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">More languages...</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">Beginner Guides</a></li>
+        <li><a href="#">Tips & Tricks</a></li>
+        <li><a href="#">Code Templates</a></li>
+        <li><a href="#">Integration API</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Community</h4>
+      <ul>
+        <li><a href="#">Forum (coming soon)</a></li>
+        <li><a href="#">Discord</a></li>
+        <li><a href="#">User Groups</a></li>
+        <li><a href="#">Online Events</a></li>
+        <li><a href="#">Success Stories</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Report a Bug</a></li>
+        <li><a href="#">Service Status</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Contribute</h4>
+      <ul>
+        <li><a href="#">Developer Guide</a></li>
+        <li><a href="#">GitHub Repository</a></li>
+        <li><a href="#">Submit Improvements</a></li>
+        <li><a href="#">Security Report</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom section -->
+  <div class="footer-bottom">
+    <div class="footer-links">
+      <a href="#">Help Center</a>
+      <a href="#">Diversity Initiatives</a>
+      <a href="#">Report a Bug</a>
+      <a href="#">Status <span class="status-dot"></span></a>
+    </div>
+    <p>© 2025 PyrathonCompiler. Multi-language compilation platform.</p>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
